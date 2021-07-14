@@ -1,0 +1,13 @@
+Hibernate Interview Prepration
+============================================
+
+- Difference between get and load in Hibernate
+
+https://javarevisited.blogspot.com/2012/07/hibernate-get-and-load-difference-interview-question.html#:~:text=The%20main%20difference%20between%20get,the%20database%20if%20any%20method
+
+
+- Difference between First and Second Level Cache in Hibernate
+https://javarevisited.blogspot.com/2017/03/difference-between-first-and-second-level-cache-in-Hibernate.html
+
+- Hibernate Template
+https://docs.spring.io/spring-framework/docs/4.2.9.RELEASE/javadoc-api/org/springframework/orm/hibernate4/HibernateTemplate.html

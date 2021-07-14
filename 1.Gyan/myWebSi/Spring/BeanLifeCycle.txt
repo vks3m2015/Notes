@@ -1,0 +1,20 @@
+As of Spring 2.5, there are three options for controlling bean lifecycle behavior: 
+
+the InitializingBean and DisposableBean callback interfaces; 
+custom init() and destroy() methods; and 
+the @PostConstruct and @PreDestroy annotations.
+
+When combining different lifecycle mechanisms - for example, in a class hierarchy in which various lifecycle mechanisms are in use - developers should be aware of the order in which these mechanisms are applied. The following is the ordering for initialization methods:
+
+1. Methods annotated with @PostConstruct
+2. afterPropertiesSet() as defined by the InitializingBean callback interface
+3. A custom configured init() method
+
+Destroy methods are called in the same order:
+
+1. Methods annotated with @PreDestroy
+2. destroy() as defined by the DisposableBean callback interface
+3. A custom configured destroy() method
+
+[Note]	Note
+If multiple lifecycle mechanisms are configured for a given bean, and each mechanism is configured with a different method name, then each configured method will be executed in the order listed above; however, if the same method name is configured - for example, init() for an initialization method - for more than one of the aforementioned lifecycle mechanisms, that method will only be executed once.

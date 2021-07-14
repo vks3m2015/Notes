@@ -1,0 +1,35 @@
+DB Interview Questions
+========================
+
+What is materialized view?
+Different types of constraint?
+How to create clone of structure of a table (not data).
+Get Common Records From Two Tables Without Using Join  ( Use - INTERSECT)
+
+count(column) =? if column has values - 1,2,3,4,NULL
+
+performance of db
+
+DB
+------
+outer join
+difference between union and union all [spectra medix]
+what are aggregate functions [spectra medix]
+difference between primary key and unique key
+difference between delete, drop, truncate
+
+Queries
+=========
+query to get employees who have same salary
+get all employees under managers
+third highest salary 
+
+
+Difference  between Functions and Stored Procedure
+what is SQL Injection?
+Can stored procedure return two values?
+how to authenticate user in db?
+Issues when you use only Statement not PreparedStatement?
+
+how to make or design One To Many relation in DB? and Many to Many?
+Third highest salaray

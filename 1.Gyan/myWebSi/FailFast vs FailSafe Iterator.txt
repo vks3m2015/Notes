@@ -1,0 +1,19 @@
+FailFast vs FailSafe Iterator
+===============================
+Iterators returned by below classes are Fail-Fast.
+ArrayList
+HashMap
+Vector  
+
+If the underlying object is structurally modified at any time after the iterator is created, in any way except through the iterator's own remove or add methods, the iterator will throw a ConcurrentModificationException.
+
+
+Fail-Safe iterators don’t throw any exceptions if a collection is structurally modified while iterating over it. This is because, they operate on the clone of the collection, not on the original collection and that’s why they are called fail-safe iterators. 
+
+Iterator on  these are fail-safe Iterator - 
+CopyOnWriteArrayList 
+ConcurrentHashMap 
+
+Note - A structural modification in a Map is any operation that adds or deletes one or more mappings; merely changing the value associated with a key that an instance already contains is NOT a structural modification.
+
+How Fail Fast Iterator works ? - https://www.geeksforgeeks.org/fail-fast-fail-safe-iterators-java/

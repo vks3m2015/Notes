@@ -1,0 +1,21 @@
+https://www.geeksforgeeks.org/differences-between-views-and-materialized-views-in-sql/
+
+Views
+=======
+
+A View is a virtual relation that acts as an actual relation.
+Query expression of the view is stored in the databases system.
+Tuples of the view are not stored in the database system and tuples of the view are generated DYNAMICALY every time the view is accessed
+
+Views can be used everywhere were we can use the actual relation.
+Views can be used to create custom virtual relations according to the needs of a specific user. 
+We can create as many views as we want in a databases system.
+
+Advantages
+-----------
+Views can join and simplify multiple tables into a single virtual table.
+Views take very little space to store; the database contains only the definition of a view, not a copy of all the data that it presents.
+
+Materialized Views:
+====================
+When the results of a view expression are stored in a database system, they are called materialized views.

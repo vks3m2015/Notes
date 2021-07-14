@@ -1,0 +1,21 @@
+Immutable String
+====================
+
+
+https://www.baeldung.com/java-string-immutable
+
+Why String is Immutable
+------------------------
+1. String constant pool
+2. Synchronzation (String is Thread safe)
+3. Security (Can be shared accross methods, threads without worrying state change)
+4. Good candidate for hashmap
+5. Performance ( Cache hashcode of string. So need not to calculate hashcode again and again )
+6. Saving lot of Heap Memory
+
+Benefits of Immutable Objects in Java
+-----------------------------------------
+
+
+How to create immutable objects in java
+----------------------------------------

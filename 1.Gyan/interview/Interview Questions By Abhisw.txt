@@ -1,0 +1,26 @@
+Closure
+prototype Inheritence
+spread operator
+PURE function
+life cycle hooks
+ngAfterViewInit => Parent child
+DI in angular
+Reactive form
+controlvalueAccessor
+Authorixation and authtentication
+Error handling
+Lazy Loading
+ngrx/store
+Put request in case of ngrx/store
+observer in case of angualar
+switchMap, mergeMap, contactMap
+SearchBox
+ubsubscribe in generic way
+View Encapsulation
+fork Join
+Brief about webpack
+Directives, Custom drectives
+let,const, var
+Hoisting in js
+
+

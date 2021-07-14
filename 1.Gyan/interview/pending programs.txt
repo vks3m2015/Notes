@@ -1,0 +1,5 @@
+
+
+find median of two sorted arrays
+mid element of linked list
+KMP algo (pattern searching)

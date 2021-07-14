@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="Jars/lib/annotations-api.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/catalina-ant.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/catalina-ha.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/catalina-tribes.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/catalina.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/ecj-4.2.2.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/el-api.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/jasper-el.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/jasper.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/tomcat-api.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/tomcat-coyote.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/tomcat-dbcp.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/tomcat-i18n-es.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/tomcat-i18n-fr.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/tomcat-i18n-ja.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/tomcat-jdbc.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/tomcat-util.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/tomcat7-websocket.jar"/>
+	<classpathentry kind="lib" path="Jars/lib/websocket-api.jar"/>
+	<classpathentry kind="lib" path="Jars/Spring Jar/jar/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="Jars/Spring Jar/spcorejars/spcorejars/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="Jars/Spring Jar/spcorejars/spcorejars/com.springsource.org.apache.log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="Jars/Spring Jar/spcorejars/spcorejars/jmxtools-1.2.1.jar"/>
+	<classpathentry kind="lib" path="Jars/Spring Jar/spcorejars/spcorejars/org.springframework.asm-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="Jars/Spring Jar/spcorejars/spcorejars/org.springframework.beans-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="Jars/Spring Jar/spcorejars/spcorejars/org.springframework.context-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="Jars/Spring Jar/spcorejars/spcorejars/org.springframework.core-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="Jars/Spring Jar/spcorejars/spcorejars/org.springframework.expression-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

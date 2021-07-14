@@ -1,0 +1,242 @@
+OOPS
+=======
+Deep cloning and shallow cloning  
+
+------>
+Association, Aggregation, Composition [Globallogic]
+what is destructor in java?
+Diamond problem in java?? is there any change in java 8 regarding this.
+
+Abstarct class - can we make object of it.
+is there constructor in abstract class
+What are Marker Interface?
+
+How to make a class immutable?
+Inner Classes??
+Why to use getter and setter if they are public and can be accessed from anywhere [Hughes]
+final keyword [IRIS]
+
+why to use Abstract class when interface can also have method definition onwards java 8
+
+
+Overloading/Overriding
+===================================
+Runtime and Compile time polymorphism
+access modifier in overriding?? can narrow down or not??
+return type on overriding and overloading
+covariant type??
+
+class A {}
+class C implements A {  
+    public void display(){
+	  sysout(" class C  display method");
+	}
+		
+}	
+class B implements A {  
+    public void display(){
+	  sysout(" class A  display method");
+	}
+	
+	main()
+	{
+	   A a = new B();
+	   a.display();  //this will create error as display() method is not in class A( parent class )
+	   
+	   ((C)a).display(); //class cast exception
+
+	}
+}
+	
+Exception Handling
+===================
+ClassNotFoundException vs NoClassDefFoundError [DXC]
+How to create custom checked/unchecked exception
+Can we have try block without catch and finally?
+
+
+Serialization
+=================
+Serialization
+what is use of serial version id [Ebix Software]
+
+MultiThreading
+=======================
+
+Runnable and Callable differences? besides return values..? 
+How many ways to create thread? which one is better?
+ReENTARNT lOCK?
+What is synchronization
+What is synchronized block and how different from synchronized method
+What is double checked locking in Singleton
+What is use of volatile keyword 
+Difference between Atormic variables and volatile which one is u prefer ?
+Thread1 prints 'A',Thread1 prints 'B', Thread1 prints 'C'. How to run these threads to print in same order
+
+fork and join 
+difference between runnable and callable
+what are buckets in concurrent hashmap
+
+------>
+How to implement your own Blocking Queue [IRIS]
+How to implement ur own ConcurrentHashMap
+Why must wait() always be in synchronized block
+Differnce between wait() and sleep()
+What do u mean by a object is locked? ( all of its properties are locked??)
+DeadLock[IRIS,Airtel]
+difference between callable and runnable  [IRIS]
+
+Producer - Consumer
+how to lock only some attributes of a object in java (synchronization)
+how to to start a thread only if one thread is finished its execution
+how to make singleton class thread safe
+Executor class
+
+
+CoreJava
+=========
+Bonded context?
+Caching Framework?
+what is Generics?
+In serialization, after storing object into file, if we made changes, what will happen?
+transit keyword?
+
+what are virtual objects in java?
+Difference between Abstration and Encapsulation?
+What is composition?
+
+Why String is Immutable?
+Difference between Abstarct Class and Interface
+Purpose of Default method in Interface in java 8
+Can we declare a class static? Can we define outer class static? and why?
+Can you declare constructor as final?
+Marker interfaces?
+Can we overload or overrride main() method 
+what is static import
+
+Optional??
+
+Garbage collector ?? Algo used? [capco]
+Class Loader?
+Memory model java?
+Difference between stack memory and heap memory? Thread's memory?
+
+How to implement Caching in java? [Capco]
+Out of memory?
+
+======================================
+Exception
+========================================
+Exception Hierarchy?
+Custom Exception how to define? Are they checked or unchecked?
+Can we throw Throwable Exception?
+
+==========================================
+Java 8
+==========================================
+lamda, method refrence?
+Parallel Stream??? [Capco]
+Date time api?
+what changes regarding hashmap in java 8?
+
+what is SOLID programming concepts?
+
+
+==============================
+Collections
+=====================
+
+HashMap
+----------
+what are buckets in concurrent hashmap
+Difference between HashTable and ConcurrentHashMap?
+How hashcode is mapped to table index
+Write hashcode() and equals() implementation of a custom class 
+How bucket wise lock is done in ConcurrentHashMap
+What will happen if overide hashcode() to return a constant value for all keys
+what if implement only one of hashCode() and equals() methods
+
+What to do while making Custom object as key in HashMap or storing it in HashSet??
+// overide hashCode() and equals() 
+
+Can we delete elements from HashMap while traversing?? Which Exception will it throw? [IRIS]
+Difference b/w Enumerator and Iterator ??
+Difference between Comaprable and Comparator
+Difference Between HashMap and HashTable
+
+how to make a arraylist read only [newgen]
+
+Time complexity of hashmap put and get [Hughes]
+Implement linked list[Hughes]
+How treemap decides ordering[Hughes]
+
+Time Complexity - HashMap, TreeMap, Set....?
+Difference between ArrayList and Linked List? Whrere to use what?
+Diffrence between HashMap and Multivalued HashMap
+what is contract between hashcode() and equals()? 
+Which is faster TreeSet or HashSet?
+Comparable and Comparator difference
+Hashtable and hashmap difference?
+
+=================================================
+Design Pattern
+================
+Singleton class  and Thread safe singleton class
+Design Pattern??
+Builder, Composite, etc design patterns ? [Capco]
+sigleton? How to create? How to break?
+    
+
+REST
+------------
+REST response code
+REST how to authenticate a request
+Status codes for DELETE operations
+what status code if someting is deleting asynchronously?
+
+What Is Idempotent in REST? [Hughes]
+
+Program
+========
+array of integers how to find count of a integer in efficient way. different algo for optimize solution??
+
+
+Mislenious
+==============
+What are different http methods?
+diff b/w HTTP and HTTPS?
+
+what is indexing in java
+time complexity of Binary Search
+
+https://vitalflux.com/5-tricky-interview-questions-java-arraylist/
+
+Following questions were asked
+-How to stop a thread from java program itself without using kill -9 command.
+- a Person class, create it's some objects, Person class has 4 fields :
+Name, salary , address and organization
+Now , create a hashset...
+Create 3 or 4 objects of Person class in hashset.. and store them in hashset in sorted manner on basis of name . If name is same in two objects , then sort them on basis of salary.
+- hashmap, treemap, cyclic barrier, ciuntdown latch, 
+-design patterns: builder design pattern
+- question : "whether u know spring or not. " Some basic idea.
+-Conversion constructor in Collections..
+-ReentrantLocks
+
+==========
+
+Hughes
+-------
+String rotation - two string as input and return true if one is rotation of other
+Integer x =5;  System.out.println( x.equals(5));    //it will print true  [Hughes]
+
+
+
+
+
+//************************************************************  NEED TO GO THROUGH  =====*************************************** -
+
+Generics  https://www.journaldev.com/1663/java-generics-example-method-class-interface
+volatile vs Atomic  https://stackoverflow.com/questions/19744508/volatile-vs-atomic
+ITERATOR - https://www.journaldev.com/13460/java-iterator
+

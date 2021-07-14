@@ -1,0 +1,18 @@
+Java Topics
+-----------
+Executor Services
+Threads - deadlock, blocking queue, Producer Consumer, Synchronization
+
+OOPs concept - abstraction, encapsulation, inheritance, polymorphism
+
+Serialization
+Design Pattern - singleton
+
+Collection - HashMap, HashSet, ArrayList
+
+
+
+================
+
+
+

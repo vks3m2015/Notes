@@ -1,0 +1,13 @@
+Wait and Sleep methods 
+=============================
+
+Wait
+-------
+It can be called on any object, as it's defined right on java.lang.Object, but it can only be called from a synchronized block. It releases the lock on the object so that another thread can jump in and acquire a lock.
+
+We can wake the thread by calling either the notify() or notifyAll() methods on the monitor that is being waited on
+
+
+Sleep
+------
+Thread.sleep() is a static method that can be called from any context. Thread.sleep() pauses the current thread and does not release any locks.

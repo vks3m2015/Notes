@@ -1,0 +1,58 @@
+To Study
+============
+Java unit testing frameworks such as Junit, Mockito
+Maven
+Hibernate
+Micro Services
+Messaging Queues - JMS, ActiveMQ etc
+
+
+
+
+Transaction Management in spring
+AOP proxies (Spring proxies)
+@Transactional
+
+AOP
+Micro Services- Java Brains
+
+
+
+
+
+---------------
+Timsort
+Binary sort
+Merge sort
+Insertion sort
+---------------------
+JAXB
+
+Http Messages converters
+https://www.baeldung.com/spring-httpmessageconverter-rest
+
+how annotations work internally in java
+
+Spring
+=================
+Spring boot application statup steps
+DisatcherServlet
+WebApplicationInitializer
+
+custom Annotations
+
+
+ 
+Spring MVC - Unit Testing
+https://www.logicbig.com/tutorials/spring-framework/spring-web-mvc/xml-message-object-conversion.html
+
+Spring REST XML and JSON
+https://www.journaldev.com/8934/spring-rest-xml-and-json-example
+
+Handler mappings
+https://docs.spring.io/spring/docs/3.0.0.M3/spring-framework-reference/html/ch16s04.html
+
+
+
+Hibernate
+===========

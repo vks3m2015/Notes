@@ -1,0 +1,13 @@
+SERIALIZATION
+==================
+https://dzone.com/articles/java-serialization-magic-methods-and-use-cases
+
+The Serializable interface is a marker interface with no methods or fields. It works like a flag for the JVM. The Java serialization process provided by ObjectInputStream and ObjectOutputStream classes are fully controlled by the JVM.
+
+writeReplace and readResolve Methods
+Serializable classes that need to designate an alternative object to be used when writing an object to the stream should provide this special method with the exact signature:
+
+ANY-ACCESS-MODIFIER Object writeReplace() throws ObjectStreamException
+And Serializable classes that need to designate a replacement when an instance of it is read from the stream should provide this special method with the exact signature:
+
+ANY-ACCESS-MODIFIER Object readResolve() throws ObjectStreamException

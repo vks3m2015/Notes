@@ -1,0 +1,21 @@
+
+
+@Configuration
+@EnableAutoConfiguration
+@ComponentScan
+
+@Configuration 
+
+we generally recommend that your primary source is a @Configuration class.
+
+
+@ComponentScan
+
+It is recommended to locate main application class in a root package. It allows the @ComponentScan annotation to be used without needing to specify a basePackage attribute. All of application components (@Component, @Service, @Repository, @Controller etc.) will be automatically registered as Spring Beans.
+
+
+
+@EnableAutoConfiguration
+
+https://docs.spring.io/spring-boot/docs/1.3.8.RELEASE/reference/html/using-boot-auto-configuration.html
+It attempts to automatically configure Spring application based on the jar dependencies that we have added.

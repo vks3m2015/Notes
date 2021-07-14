@@ -1,0 +1,126 @@
+Different Type of Constraints in DB
+===================================
+1. PRIMARY KEY
+2. FOREIGN KEY
+3. NOT NULL
+4. UNIQUE
+5. CHECK
+6. DEFAULT 
+
+Points
+---------
+We can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per table.
+
+
+
+Eg- you may want either username or email column of the user tables is not null or empty.
+
+CREATE TABLE users (
+ id serial PRIMARY KEY,
+ username VARCHAR (50),
+ password VARCHAR (50),
+ email VARCHAR (50),
+ CONSTRAINT username_email_notnull CHECK (
+   NOT (
+     ( username IS NULL  OR  username = '' )
+     AND
+     ( email IS NULL  OR  email = '' )
+   )
+ )
+);
+
+
+NOT NULL
+==========
+CREATE TABLE invoices(
+  id SERIAL PRIMARY KEY,
+  product_id INT NOT NULL,
+  qty numeric NOT NULL CHECK(qty > 0),
+  net_price numeric CHECK(net_price > 0) 
+);
+
+Adding NOT NULL Constraint to existing columns
+
+ALTER TABLE table_name
+ALTER COLUMN column_name SET NOT NULL;
+
+UNIQUE
+=========
+It ensure that values stored in a column or a group of columns are unique across the whole table such as email addresses or usernames.
+
+CREATE TABLE person (
+	id SERIAL PRIMARY KEY,
+	first_name VARCHAR (50),
+	last_name VARCHAR (50),
+	email VARCHAR (50) UNIQUE
+);
+
+OR
+
+CREATE TABLE person (
+	id SERIAL  PRIMARY KEY,
+	first_name VARCHAR (50),
+	last_name  VARCHAR (50),
+	email      VARCHAR (50),
+        UNIQUE(email)
+);
+
+
+CHECK
+==========
+The CHECK constraint uses a Boolean expression to evaluate the values before they are inserted or updated to the column.
+
+If the values pass the check, PostgreSQL will insert or update these values to the column. Otherwise, PostgreSQL will reject the changes and issue a constraint violation error.
+
+DROP TABLE IF EXISTS employees;
+CREATE TABLE employees (
+	id SERIAL PRIMARY KEY,
+	first_name VARCHAR (50),
+	last_name VARCHAR (50),
+	birth_date DATE CHECK (birth_date > '1900-01-01'),
+	joined_date DATE CHECK (joined_date > birth_date),
+	salary numeric CHECK(salary > 0)
+);
+
+
+To add CHECK constraints to existing tables, you use the ALTER TABLE statement.
+
+ALTER TABLE prices_list 
+ADD CONSTRAINT price_discount_check 
+CHECK (
+	price > 0
+	AND discount >= 0
+	AND price > discount
+);
+
+DEFAULT
+============
+
+mysql
+-------
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    City varchar(255) DEFAULT 'Sandnes'
+);
+
+The DEFAULT constraint can also be used to insert system values, by using functions like GETDATE()
+
+CREATE TABLE Orders (
+    ID int NOT NULL,
+    OrderNumber int NOT NULL,
+    OrderDate date DEFAULT GETDATE()
+);
+
+To create a DEFAULT constraint on the "City" column when the table is already created
+
+ALTER TABLE Persons
+ALTER City SET DEFAULT 'Sandnes';
+
+
+To drop a DEFAULT constraint
+
+ALTER TABLE Persons
+ALTER City DROP DEFAULT;

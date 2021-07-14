@@ -1,0 +1,101 @@
+MMT
+==============
+String
+=======
+Reverse words of a string without using extra space. Ex. "MMT is great company" should become "company great is MMT". Also implement using recursion
+1. Given a character stream of very large length and a number 'k'. You have to print 'k' number of most repeated characters in ascending order.
+e.g. Input: " aabcaabbdc ", k = 3
+       Output: a b c 
+
+
+Array
+=========
+Write a program to find duplicate elements in an array In O(n) time using O(1) extra step
+Find Minimum element in a rotated array.  
+Find an element in a rotated array without finding rotation point first.  
+An array is given. With k swaps, find the maximum number that can be formed using those array elements.
+Reverse a stack in place.
+You have a sorted array of numbers, e.g. 1,1,1,1,1...,4,4,4,4,4,4....,8,8,8,8,8,8.... You have to return list of unique digits if total number unique digits is maximum 1000 and total number is minimum 1 Billion.
+Merging two sorted arrays ?
+Given an array find the missing number.
+find max subarray among array of _ve and -ve elements
+Nth biggest element. 
+design a queue with two stack
+
+
+Tree
+=======
+Diameter of a tree
+Bottom view of a binary tree.
+Write a program to print mirror image of a tree
+Program to print bottom view of tree
+Print the diameter of tree. And then was asked to print all the nodes of the longest diameter  
+LCA in binary tree 
+Print the diameter of tree. And then was asked to print all the nodes of the longest diameter
+Top view of a tree
+Right view of a tree
+Heapify algorithm
+A+B+C=0 problem 
+
+OPtimization
+==============
+1) Knapsack problem
+2) Longest Palindromic substring
+Max Cost in a 2D matrix with only right and down movement allowed at every cell
+tsp problem 
+coin change problem
+
+LinkedList
+===========
+check if a linked list is palindrome or not
+Find middle element in a link list ?
+2. Which sorting algorithm is better for linked list and why ?
+3. Psuedo code for merge sort in link list ?
+inserting a node in circular linked list 
+Write a program to reverse a linked list.
+check if a linked list is pallendrom.  
+doubly linked list.
+
+
+
+
+
+
+
+  
+1. Write a java program to print numbers from 1 to 10 using 2 threads. Thread 1 should print odd and thread 2 should print Even numbers.
+3. A Company is having a number is cyber cafe. Many customer visit cyber cafe and number if computers are limited. If customer don't find available computer then he leave. You have given a function with 2 arguments : 1 number of computers, 1 : a string with pairs. 1st occurrence of alphabet indicate start of customer and second occurrence indicate end. Only 1 person can use a computer at a time. Return count of customers who left cafe without using computer so that company can improve process.
+example :
+process(1, ABAB) : should return 1 as only 1 computer is there that is occupied by A when B comes.
+process(2,ABACBCDD) : should return 0 as all customer A,B,C, D are able to use Cafe.
+process(3, ABCDCDEFEFA) : should return 2 as D and F could use computer.
+
+
+1. Implement a cache of Generic Type which can contain key and value(Both of Generic type). Write methods to get, add and delete elements from cache. If an element is not accessed for more than 10 mins, remove it from the cache.
+5. Two threads : print T1 T2 T1 T2 T1 T2 ?
+
+
+design lru cache
+edit distance in string
+multithreading  
+Sorting a hash map.
+Iterative implementation of merge sort. (Pen & Paper)  
+Polynomial function to find all words of T9 dictionary. (Pen & Paper)  
+Topological sorting of alien dictionary. (First Round)  
+Program to solve a Rubik's cube.
+
+2. define your own ConcurrentHashMap
+  
+Few Puzzles - like you are in forest and you have 4 nedicni ( 2 of each kind) and suddenly you went blind.
+How you will make sure you eat two medicines of different kind.
+  .
+b. LRU Design
+a. Explain internals of JVM
+ c. Discussion about Redis cache ( Design)
+d. About GC and generations
+
+Puzzle-how to fill the glass exactly half without measuring  
+
+ 
+
+ 

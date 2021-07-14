@@ -1,0 +1,32 @@
+Q - What default library used in Spring for serializing and deserializing??
+    Spring Boot uses Jackson by default for serializing and deserializing request and response objects in your REST APIs.
+	
+Q - Bean Scopes	
+
+How to handle XML content type in REST through spring boot
+
+What changes do we need to do to make a applicatoion spring boot app?
+
+How to connect to database in spring boot app
+
+Pagination in spring boot?
+
+Write a controller that has only access to admin?
+
+
+
+
+
+Hibernate
+=============
+What is Cascading?
+
+
+
+
+
+
+DB
+===
+What is View?
+ 

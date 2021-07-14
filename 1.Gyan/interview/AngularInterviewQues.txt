@@ -1,0 +1,43 @@
+
+[IRIS]
+How to create root? command?  
+what kind of validations can apply?
+What are diectives used in angular?
+
+
+Architecture of Angular?
+Directives?
+What is Eager Loading and Lazy Loading? How Lazyloading works?
+
+How Services injected in component?
+How Angular source code is converted into javascript?
+what is AOT ?
+
+What is http intersecptor?
+
+How many threads in Java Script?
+
+callback functions?
+
+Advantages of typescript?
+FLUX??
+
+ecma script?? - let,const,string...
+prototye?
+error functions in js?
+event function?
+
+how to deploy angular app on server?
+what framework to use for angular development
+
+what are guards?
+How angular maintain singleton for services?
+
+what is change detection? [globallogic]
+
+statement 1 ->> setTimeinterval(() => { functionToExecute })
+statement 2 ->> some code 
+How to ensure statement 2 is executed only when statement 1 has executed successfully
+
+
+padding and margin in css difference?

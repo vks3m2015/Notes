@@ -1,0 +1,19 @@
+Synchronized vs ReentrantLock
+==================================
+
+ReentrantLock extends the functionality of synchronized keyword in Java and open the path for more controlled locking in Java.
+
+ReentrantLock, which provides more control on lock acquisition.
+
+
+
+
+1- ReentrantLock provides a convenient tryLock() method, which acquires lock only if its available or not held by any other thread. This reduces the blocking of thread waiting for lock-in Java application.
+
+One more worth noting the difference between ReentrantLock and synchronized keyword in Java is, the ability to interrupt Thread while waiting for Lock. In case of synchronized keyword, a thread can be blocked waiting for a lock, for an indefinite period of time and there was no way to control that. ReentrantLock provides a method called lockInterruptibly(), which can be used to interrupt thread when it is waiting for lock. Similarly, tryLock() with timeout can be used to timeout if the lock is not available in certain time period.
+
+https://www.javamadesoeasy.com/2015/03/difference-between-synchronized-and.html
+
+
+
+https://javarevisited.blogspot.com/2013/03/reentrantlock-example-in-java-synchronized-difference-vs-lock.html

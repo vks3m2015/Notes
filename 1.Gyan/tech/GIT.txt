@@ -1,0 +1,27 @@
+
+
+How are git tags different from git branches?
+
+
+git checkout
+-------------
+
+Switching between existing local branches like 
+      git checkout <existing_local_branch_name>
+	  
+Create a new branch from current branch using flag -b. Suppose if you are at master branch then 
+      git checkout -b <new_feature_branch_name> 
+will create a new branch with the contents of master and switch to newly created branch
+
+restore file from x rev
+     git checkout rev file_to_restore
+
+===
+git checkout is to checkout your desired status of your repository (like branches or particular files).
+
+E.g., you are currently on master branch and you want to switch into develop branch.
+
+git checkout develop_branch
+E.g., you want to checkout to a particular status of a particular file
+
+git checkout commit_point_A -- <filename>	 

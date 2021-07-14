@@ -1,0 +1,4 @@
+Dispatcher Servlet
+=====================
+
+DispatcherServlet is the entry point of every Spring MVC application. Its purpose is to intercept HTTP requests and to dispatch them to the right component that will know how to handle it.

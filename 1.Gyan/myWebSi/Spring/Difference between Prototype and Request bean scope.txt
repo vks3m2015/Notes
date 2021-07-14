@@ -1,0 +1,14 @@
+Difference between request and prototype bean scope in spring?
+
+Prototype creates a brand new instance everytime you call getBean on the ApplicationContext. Whereas for Request, only one instance is created for an HttpRequest. So in a single HttpRequest, I can call getBean twice on Application and there will only ever be one bean instantiated, whereas that same bean scoped to Prototype in that same single HttpRequest would get 2 different instances.
+
+HttpRequest scope
+
+Mark mark1 = context.getBean("mark"); 
+Mark mark2 = context.getBean("mark"); 
+mark1 == mark2; //This will return true 
+Prototype scope
+
+Mark mark1 = context.getBean("mark"); 
+Mark mark2 = context.getBean("mark"); 
+mark1 == mark2; //This will return false 

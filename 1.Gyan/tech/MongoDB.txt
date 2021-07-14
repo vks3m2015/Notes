@@ -1,0 +1,17 @@
+
+Export/Import Database
+--------------------- 
+mongoexport –db students –collection grades –out gradesOut.json
+mongoimport –db students –collection grades –file gradesOut.json
+
+
+use database_name  (to switch or to create new database)
+show dbs (to see dbs)
+show users (to see users)
+db (to see current database)
+
+show collections
+
+db.awsMockRegions.find()     //select * from awsMockRegions
+db.awsMockRegions.count()    //find count of rows in a table
+db.version()

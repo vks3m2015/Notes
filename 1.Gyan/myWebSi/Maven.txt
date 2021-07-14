@@ -1,0 +1,41 @@
+Maven
+==============
+
+Structuring Project
+Managing dependencies
+
+
+Commands
+========
+mvn compile
+mvn test
+mvn package
+mvn install
+mvn clean
+
+java -cp ~target/app.jar com.vik.MyClass
+
+mvn archtype:generate
+
+Phases
+=======
+Validate
+Compile
+Test
+Package
+Install
+Deploy
+
+scopes
+========
+<scope>  => compile is default scope
+test
+provided
+
+plugins
+===========
+groupid - artfactid
+org.apache.maven.plugins  - maven-compiler-plugin
+org.mortbay.jetty - maven-jetty-plugin          => to build, cmd  -> mvn jetty:run
+
+mvn eclipse:eclipse

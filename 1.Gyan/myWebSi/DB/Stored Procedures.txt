@@ -1,0 +1,20 @@
+
+Stored Procedures
+=========================
+
+
+
+
+
+
+
+Advantages
+------------
+https://www.essentialsql.com/what-is-a-stored-procedure/
+
+
+Execution Plan retention and resuability
+Reduces Network Traffic
+Code Reusability and better maintainability
+Better Security
+Avoid SQL Injection attack

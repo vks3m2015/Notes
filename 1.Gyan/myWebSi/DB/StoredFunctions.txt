@@ -1,0 +1,14 @@
+
+In SQL Server there are 3 types of functions  -
+Scalar Functions
+Inline table - valued functions
+Multi-statement table-valued functions
+
+
+
+
+
+Advantages
+==============
+Functions allow us to enhance the capabilities of MySQL.
+Stored functions are created by the user within DB and can be used in SQL statements

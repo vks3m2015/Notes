@@ -1,0 +1,9 @@
+ng new Project-Name
+
+ng generate component component-name
+OR
+ng generate component module-name/component-name
+
+ng generate service service-name
+ng generate module module-name
+ng serve

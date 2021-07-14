@@ -1,0 +1,4 @@
+Happens before Relationship
+=============================================
+
+http://www.dre.vanderbilt.edu/~schmidt/cs891s/2019-PDFs/6.3.2-happens-before-ordering-pt2-examples.pdf

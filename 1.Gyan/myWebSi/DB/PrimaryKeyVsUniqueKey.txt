@@ -1,0 +1,12 @@
+Primary Key Vs Unique Key
+-------------------------------
+
+Unique Key (UK): It's a column or a group of columns that can identify a uniqueness in a row.
+Primary Key (PK): It's also a column or group of columns that can identify a uniqueness in a row.
+
+
+A table can have at most one primary key, but can have multiple Unique-key.
+Primary key does not include Null values,  but Unique key can have one NULL value
+
+By Default Primary key creates a Clustered index and data in the database table is physically organized in the sequence of clustered index and 
+By Default, Unique key creates a Non Clustered Index.

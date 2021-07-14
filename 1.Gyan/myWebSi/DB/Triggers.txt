@@ -1,0 +1,7 @@
+
+A database trigger is like a stored procedure that Database invokes automatically whenever a specified event occurs. 
+
+It is a named PL/SQL unit that is stored in the database and can be invoked repeatedly. 
+
+Unlike a stored procedure, you can enable and disable a trigger, but you cannot explicitly invoke it. 
+While a trigger is enabled, the database automatically invokes it—that is, the trigger fires—whenever its triggering event occurs. While a trigger is disabled, it does not fire.

@@ -1,0 +1,98 @@
+static keyword
+
+
+Q1- What happens when a static method is invoked using a null object reference?
+
+public class CallingStaticMethod {
+public static void method() {
+    System.out.println("I am in method");
+}
+public static void main(String[] args) {
+    CallingStaticMethod csm = null;
+    csm.method();
+   }
+}
+
+
+Yes we can. It will throw NullPointerException only if we are calling non static method with null object.
+It's been optimized away by the compiler, simply because having an instance of the class is not necessary. The compiler basically replaces
+
+csm.method();
+by
+CallingStaticMethod.method();
+
+It's in general also a good practice to do so yourself. Even the average IDE would warn you about accessing static methods through an instance, at least Eclipse does here.
+
+
+
+
+
+
+
+========================
+
+Static blocks in Java
+-------------------------
+Unlike C++, Java supports a special block, called static block (also called static clause) which can be used for static initializations of a 
+class. This code inside static block is executed only once: the first time you make an object of that class or the first time you access a 
+static member of that class (even if you never make an object of that class). For example, check output of following Java program.
+
+// filename: Main.java
+class Test {
+    static int i;
+    int j;
+     
+    // start of static block 
+    static {
+        i = 10;
+        System.out.println("static block called ");
+    }
+    // end of static block 
+}
+ 
+class Main {
+    public static void main(String args[]) {
+ 
+        // Although we don't have an object of Test, static block is 
+        // called because i is being accessed in following statement.
+        System.out.println(Test.i); 
+    }
+}
+Run on IDE
+Output:
+static block called
+10
+
+
+
+Also, static blocks are executed before constructors. For example, check output of following Java program.
+
+// filename: Main.java
+class Test {
+    static int i;
+    int j;
+    static {
+        i = 10;
+        System.out.println("static block called ");
+    }
+    Test(){
+        System.out.println("Constructor called");
+    }
+}
+ 
+class Main {
+    public static void main(String args[]) {
+ 
+       // Although we have two objects, static block is executed only once.
+       Test t1 = new Test();
+       Test t2 = new Test();
+    }
+}
+Run on IDE
+Output:
+static block called
+Constructor called
+Constructor called
+
+What if we want to execute some code for every object?
+We use Initializer Block in Java

@@ -1,0 +1,6 @@
+Functions Vs Procedures
+==============================
+
+ functions can be used in a SQL statement (like in SELECT, WHERE clauses) whereas procedures cannot. 
+ 
+ procedure can return multiple values whereas a function should only return a single value.

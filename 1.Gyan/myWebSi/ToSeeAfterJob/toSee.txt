@@ -1,0 +1,10 @@
+After J in Detail
+=========================
+
+CGLIB in java
+
+
+ThreadPoolExecutor class 
+ArrayBlockingQueue class
+
+ReentrantLock

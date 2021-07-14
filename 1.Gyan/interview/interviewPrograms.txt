@@ -1,0 +1,214 @@
+ORACLE
+----------
+
+List prime factorization of numbers from 1 to 10000
+List Armstrong Numbers from 1 to 500
+Write 5 features from 5 classes of Collection Framework
+Find missing number from given Pattern. It was easy but right now I cannot remember the exact pattern
+Find Middle element in LinkedList contains millions of millions data by traverse only once and without using extra memory space.
+Listing Contiguous Elements whose sum is maximum in an array contains signed integers
+Print ODD numbers in one thread and EVEN numbers in another thread, but final print will be in normal sequesnce e.g. 1 2 3 4 5 …
+
+
+https://howtodoinjava.com/interview-questions/real-java-interview-questions-asked-for-oracle-enterprise-manager-project/
+
+
+AMAZON
+============================================
+
+Linked List
+---------------
+Check if Linked list contains loop.
+Merge two sorted linked list into one without any extra space
+Construct a Maximum Sum Linked List out of two Sorted Linked Lists having some Common node(http://www.geeksforgeeks.org/maximum-sum-linked-list-two-sorted-linked-lists-common-nodes/)
+Reverse a linked list
+Adding two polynomials using Linked List ( http://www.geeksforgeeks.org/adding-two-polynomials-using-linked-list/ )
+
+Tree
+---------------
+Create Balanced binary search tree from sorted array
+Check if tree is a binary tree or binary search tree or not (https://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/)
+Longest consecutive path in a binary tree (https://www.geeksforgeeks.org/longest-consecutive-sequence-binary-tree/)
+Find the sum of all left leaves in a binary tree (https://www.geeksforgeeks.org/find-sum-left-leaves-given-binary-tree/)
+Given a binary tree along with a value. The question is to find the mirror of that node,the value always exist in the binary tree
+Print tree in a vertical order ( https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/ )
+Zigzag print of a binary tree (https://www.geeksforgeeks.org/level-order-traversal-in-spiral-form/ )
+Delete operation on a BST
+Inorder Successor in Binary Search Tree  https://www.geeksforgeeks.org/inorder-successor-in-binary-search-tree/
+https://www.geeksforgeeks.org/remove-all-nodes-which-lie-on-a-path-having-sum-less-than-k/
+
+
+
+OPTIMIZATION
+--------------
+Given rods with different costs, combine the rods in a way such that you get the minimum cost.
+
+Dynamic Programming
+----------------------
+Minimum number of jumps to reach end (http://www.geeksforgeeks.org/minimum-number-of-jumps-to-reach-end-of-a-given-array/)
+
+
+String
+----------
+Rearrange a string such that no two same characters are adjacent to each other ( https://www.geeksforgeeks.org/rearrange-characters-string-no-two-adjacent/ )
+Given a string,print all the sub-strings that are palindrome [adobe]
+
+
+Array
+-------
+ Given a Sorted array in which all elements are repeated except one element. Find non repeated element in O (log n).
+ 
+Given an array of integers, replace every number with the next higher number to its right. If a number can’t be replaced, we leave it as-it is.
+For example, the list: 5, 2, 1, 4, 6, 7 needs to be changed to 6, 4, 4, 6, 7, 7  [--------TO SEE--------]
+
+DS for identifying min from given array for index range x to y.
+Segregate even and odd number in the list with out using extra space
+Find the pivot element. ( https://www.geeksforgeeks.org/type-array-maximum-element/ )
+Find the first non-repeating character in a stream of integers
+Maximize number of 0s by flipping a subarray ( http://www.geeksforgeeks.org/maximize-number-0s-flipping-subarray/ )
+[FLIPKART] Minimum steps to reach a destination (https://www.geeksforgeeks.org/minimum-steps-to-reach-a-destination/)
+ http://www.geeksforgeeks.org/sort-array-according-order-defined-another-array/
+
+
+ 
+Stream of coordinates are given. you need to identify k nearest points for given coordinate at any point of time
+Given dictionary of alien language. You need to find order of alphabets based on dictionary – Topological sorting
+Write a program to output power(m,n)
+3) Given an infinitely long sorted array having -1’s at the end search a value in that array
+4) Provide the complexities for the above questions.
+1) 
+2) 
+ Given a array with n songs,we have to play all the songs only once.Given only 2 functions
+1)playsong(songid)
+2)getRandom(n) – return the random values in between 1 to n
+Told hashmap approach he told if the getRandom() give the same values million of time then its sucks.So I modified my approach and he was impressed.
+
+2) A kind of design question. Given amazon log files of two days.He asked me to find the users who logged in both the days. Had discussion using Hashmap,he want to optimise further I gave solution using trie with little modification in its structure
+
+struct Trie {
+    int count[2],
+    bool isleaf;
+    Trie *child[26];
+    Trie() {
+          count[0]=count[1]=0;
+          isleaf = false;
+          for(int i=0;i < 26;i++)
+          child[i]=NULL;
+    }
+};
+He appreciated me and left.
+
+Given a 2D matrix with elements 1 and 0, where 1 is land and 0 is water. Find the number of islands. ( https://www.geeksforgeeks.org/find-number-of-islands/ )
+2. Design a data structure which supports operations: insert, delete, find and findAny in constant time.
+Given an array which can be either of the following:
+Non-decreasing
+Non-increasing
+Increasing then decreasing
+Decreasing then increasing
+
+4. Explain heapify function of heap sort. Then explain with code what happens when you remove one element(max/min) from the heap.
+Question 2 : http://www.geeksforgeeks.org/find-a-tour-that-visits-all-stations/
+
+Question 1 : http://www.geeksforgeeks.org/find-smallest-range-containing-elements-from-k-lists/
+
+
+ 
+
+ 
+PAYTM
+====================================
+Write code to create mirror image of tree.
+b ) Given an array of arrival and departure time of guests , find minimum no fo rooms required to accommodate guests at any point of time.
+
+Round 2 :
+1. WAP to search a number in a row wise – column wise sorted matrix.
+2. Flatten a linked list.
+3. Discussions around binary and ternary search.
+4. Discussed objective questions of written round.
+
+
+Round 3 :
+1. How will you store a series of mobile nos in memory efficiently (less space).
+e.g mobile nos like 999900001,999900003,999900005,999910006,999910007 … are there.
+DS should be designed such that retreival is not inefficient.
+
+2. Stream of Access logs are given to you with user id , page id and date.
+Design Data structure to find n recent unique visitors and page they visited.
+
+
+
+
+Nagarro
+==================
+2 Qs- Given a string containing characters and brackets, find if the brackets are paired in the string.
+3 Qs- (Little Tricky) Given a set of integers, find the third maximum sum of two elements from the set.
+For ex – Array -> 3,6,2,7,8,19,13,5
+
+
+
+
+
+
+
+HSC
+==========
+1. Write a program to find how many times a word occurs in a string.
+Eg : this is abc company.I like this company abc.
+
+Write a program to limit the maximum creation of objects as 5.
+WAP to check whether a given number is an Armstrong number.
+WAP to find top 2 numbers from an array.  
+WAP to implement a Queue using two stacks.
+WAP to return the index position of the first occurance of '1' in the following array
+[0,0,0,0,0,,,,,,,,,1,1,1,,,,,,,1]  
+
+Implement Queue using Stacks  
+check given number is palindrome or not.
+
+find largest Sting from a String having having character in English alphabet order.
+
+Which is faster Implementing the Interface or extending the abstract class.  
+
+find the all not repeated substring from a string.
+find the missing number from an array.
+
+Implement a doubly linkedlist.
+what are fail-fast and concurrent hasmaps?
+inter-thread communications
+different verbs of rest webservices.  
+
+Implement Queue using stacks.
+Implement circular doubly linked list.  
+Write code to check wether string is palindrome  
+
+
+
+
+
+============================================== MY INTERVIEW PROGRAMS ===============
+
+max occurring character in a string
+given two sorted array find median for combined sorted array ->  https://www.geeksforgeeks.org/median-of-two-sorted-arrays/
+sqrt of a number without using in built method
+
+find maximum distance from origin position , a man movement is according to a string FBBF?F....  ( F - forward, B - backward, ? - any of it)
+max of array element except current element ( area of rectangle photo)
+
+
+next third character
+
+
+find the majority element i.e. an element which occurs more than half the length of array times. e.g. if we have an array [2, 3, 4, 2, 5, 2, 2, 2]. Here length of array is 8. and 2 occurs 5 times. and 5 > 8/2 i.e. 4. so print 2. In all other cases, return -1; [nagarro]
+https://www.geeksforgeeks.org/majority-element/
+
+
+longest decreasing subsequence
+
+if a string is permutation of other ?
+sort on the basis of number of occurance     7 1 1 1 9 9 9 9 4 4 4 4 4 
+
+
+
+
+
+

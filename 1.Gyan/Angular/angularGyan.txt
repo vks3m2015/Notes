@@ -1,0 +1,29 @@
+npm cache clear --force
+
+ng new project_name
+ng serve (to run project)
+
+ng generate component component_name
+ng generate module module_name
+ng generate service service_name
+
+ng generate component module_name/component_name     //generate component within a specified module
+
+ng serve
+
+
+
+
+=====
+digest cycle in angular
+
+lazy loading
+
+lifecycle hooks - https://angular.io/guide/lifecycle-hooks
+
+01524160254
+
+18002702102
+
+
+https://api.github.com/users/vks3m2015
