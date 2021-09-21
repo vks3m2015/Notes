@@ -1,1 +1,2 @@
 Volatile vs Atomic Integer
+https://www.youtube.com/watch?v=WH5UvQJizH0&t=327s
